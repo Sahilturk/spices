@@ -6,6 +6,7 @@ import LocomotiveScroll from 'locomotive-scroll';
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { Circ, Expo } from "gsap/all";
+import CursorDiv from './CursorDiv.jsx';
 
 
 
@@ -71,6 +72,7 @@ function App() {
  
   return (
     <div ref={bodyref}>
+      <CursorDiv /> 
     <span
         ref={growingSpan}
         className="growing rounded-full  fixed top-[-20px] left-[-20px] w-5 h-5"
